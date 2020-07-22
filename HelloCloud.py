@@ -5,13 +5,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '<h1>Hello There!</h1>'
+    return '<h1>Hello RUK-COM!</h1>'
 
 
 @app.route('/home', methods=['GET', 'POST'])
 def home():
-    links = ['https://www.youtube.com', 'https://www.bing.com',
-             'https://www.python.org', 'https://www.enkato.com']
+    links = ['https://ruk-com.in.th',
+             'https://www.google.com',
+             'https://www.python.org',
+             'https://www.kmutnb.ac.th']
     return render_template('example.html', links=links)
 
 
