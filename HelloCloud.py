@@ -2,11 +2,9 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
 @app.route('/')
 def index():
     return '<h1>Hello RUK-COM is Great !</h1>'
-
 
 @app.route('/home', methods=['GET', 'POST'])
 def home():
